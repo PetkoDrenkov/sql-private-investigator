@@ -3,7 +3,7 @@ Solving crimes with SQL.
 The murder in SQL City (https://mystery.knightlab.com/), with GitHub repo: (https://github.com/NUKnightLab/sql-mysteries) and cases from SQL Police Department (https://sqlpd.com/).
 
 ## Part 1. SQL Murder Mystery
-### Case 1.0.1.: The Murderer
+### Case 1.0.1.: The Killer
 Initial information (the what, the when and the where):\
 A crime has taken place and the detective needs your help. The detective gave you the crime scene report, but you somehow lost it. You vaguely remember that the crime was a **​murder​** that occurred sometime on ​**Jan.15, 2018**​ and that it took place in ​**SQL City​**. Start by retrieving the corresponding crime scene report from the police department’s database.\
 
@@ -33,7 +33,7 @@ id	    name	         license_id	address_number	**address_street_name**	    ssn\
 #### Solving the murder:
 When we query for license id in 'drivers_license' table, the only result is a person with license_id: **423327**, which corresponds to the murderer of the case: **Jeremy Bowers**. That is also confirmed by the information **"plate_number": 0H42W2** comming back to the table 'interview', where Morty Shapiro testified that the car of the murderer's plate included **"H42W"**.
  
-### Case 1.0.2.: The Mastermind.
+### Case 1.0.2.: The Mastermind....
 
 ## Part 2. SQL Police Department
 ### Case 2.0.1.:
