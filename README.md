@@ -33,7 +33,13 @@ id	    name	         license_id	address_number	**address_street_name**	    ssn\
 #### Solving the murder:
 When we query for license id in 'drivers_license' table, the only result is a person with license_id: **423327**, which corresponds to the murderer of the case: **Jeremy Bowers**. That is also confirmed by the information **"plate_number": 0H42W2** comming back to the table 'interview', where Morty Shapiro testified that the car of the murderer's plate included **"H42W"**.
  
-### Case 1.0.2.: The Mastermind....
+### Case 1.0.2.: The Mastermind
+#### Interview with the killer:
+First, we query the table 'interview', now that we know the killer's name: Jeremy Bowers, and his personal id: 67318.\
+His testimony gives us the description of the person who hired him:\
+'I was hired by a **woman** with a lot of money. I don't know her name but I know **she's around 5'5" (65") or 5'7" (67")**. She has red hair and she drives a **Tesla Model S**. I know that she **attended the SQL Symphony Concert 3 times in December 2017.**'\
+#### The car:
+Next, we use the killer's description of the woman who hired him. The result of the query are 3 women, each of different age, all with red hair. We can use their drivers license id to fin their personal id. Their names and id-s are: Red Korb- 78881, Regina George-  90700, Miranda Priestly-  99716. From there we use their personal id numbers in the table 'facebook_event_checkin' to find oud which one has attended the SQL Symphony Concert in 2017. Three results come up with the number **99716** and no results for the other two numbers: the masterming behind the murder is **Miranda Priestly**.
 
 ## Part 2. SQL Police Department
 ### Case 2.0.1.:
