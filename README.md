@@ -3,6 +3,7 @@ Solving crimes with SQL.
 The murder in SQL City (https://mystery.knightlab.com/), with GitHub repo: (https://github.com/NUKnightLab/sql-mysteries) and cases from SQL Police Department (https://sqlpd.com/).
 
 ## Part 1. SQL Murder Mystery
+The queries of the case arein folder 'part1': 'MURDER IN SQL CITY: THE KILLER.sql' and 'MURDER IN SQL CITY: THE MASTERMIND.sql'.
 ### Case 1.0.1.: The Killer
 Initial information (the what, the when and the where):\
 A crime has taken place and the detective needs your help. The detective gave you the crime scene report, but you somehow lost it. You vaguely remember that the crime was a **​murder​** that occurred sometime on ​**Jan.15, 2018**​ and that it took place in ​**SQL City​**. Start by retrieving the corresponding crime scene report from the police department’s database.\
@@ -39,7 +40,7 @@ First, we query the table 'interview', now that we know the killer's name: Jerem
 His testimony gives us the description of the person who hired him:\
 'I was hired by a **woman** with a lot of money. I don't know her name but I know **she's around 5'5" (65") or 5'7" (67")**. She has red hair and she drives a **Tesla Model S**. I know that she **attended the SQL Symphony Concert 3 times in December 2017.**'\
 #### The car:
-Next, we use the killer's description of the woman who hired him. The result of the query are 3 women, each of different age, all with red hair. We can use their drivers license id to fin their personal id. Their names and id-s are: Red Korb- 78881, Regina George-  90700, Miranda Priestly-  99716. From there we use their personal id numbers in the table 'facebook_event_checkin' to find oud which one has attended the SQL Symphony Concert in 2017. Three results come up with the number **99716** and no results for the other two numbers: the masterming behind the murder is **Miranda Priestly**.
+Next, we use the killer's description of the woman who hired him. The result of the query are 3 women, each of different age, all with red hair. We can use their drivers license id to fin their personal id. Their names and id-s are: Red Korb- 78881, Regina George-  90700, Miranda Priestly-  99716. From there we use their personal id numbers in the table 'facebook_event_checkin' to find oud which one has attended the SQL Symphony Concert in 2017. Three results come up with the number **99716** and no results for the other two numbers: the mastermind behind the murder is **Miranda Priestly**.
 
 ## Part 2. SQL Police Department
 ### Case 2.0.1.:
