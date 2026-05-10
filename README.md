@@ -52,5 +52,17 @@ Next, we use the killer's description of the woman who hired him. The result of 
 
 4. Mission Brief: A hacked site members' details have surfaced on a darknet forum. Please submit all members usernames and mailing addresses' details.
 
+5. Mission Brief: An illegal site's servers were seized in a recent operation. Please submit all users' details sorted by family names in ascending order.
+
+6. Mission Brief: A hacked site members' details have surfaced on the darknet forum. Please submit all members' details sorted by number of comments in descending order.
+
+7. Mission Brief: White hat hacker has sent SQLPD exposed subscribers' details of a shady site connected to various persons of interest. Please submit all subscribers names and subscribed since dates' details sorted by subscribed since dates in descending order. Please make sure there are no duplicates.
+
+8. Mission Brief: A mailing list of an illegal online service was sent to the SQLPD hot-line. Please submit all records number of kids and family names' details sorted by number of kids in ascending order and then by family names in ascending order.
+
+9. Mission Brief: White hat hacker has sent SQLPD exposed subscribers' details of a shady site connected to various persons of interest. Please submit the top 3 subscribers' details when sorted by number of comments in ascending order and then by names in descending order.
+
+10. Mission Brief: An illegal site's servers were seized in a recent operation. Please submit the top 3 users number of downloads, family names and last access times' details when sorted by family names in ascending order and then by last access times in descending order. Please make syre there are no duplicates.
+
 
 
