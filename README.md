@@ -33,7 +33,7 @@ id	    name	         license_id	address_number	**address_street_name**	    ssn\
 
 #### Solving the murder:
 When we query for license id in 'drivers_license' table, the only result is a person with license_id: **423327**, which corresponds to the murderer of the case: **Jeremy Bowers**. That is also confirmed by the information **"plate_number": 0H42W2** comming back to the table 'interview', where Morty Shapiro testified that the car of the murderer's plate included **"H42W"**.
- 
+
 ### Case 1.0.2.: The Mastermind
 #### Interview with the killer:
 First, we query the table 'interview', now that we know the killer's name: Jeremy Bowers, and his personal id: 67318.\
@@ -43,9 +43,14 @@ His testimony gives us the description of the person who hired him:\
 Next, we use the killer's description of the woman who hired him. The result of the query are 3 women, each of different age, all with red hair. We can use their drivers license id to fin their personal id. Their names and id-s are: Red Korb- 78881, Regina George-  90700, Miranda Priestly-  99716. From there we use their personal id numbers in the table 'facebook_event_checkin' to find oud which one has attended the SQL Symphony Concert in 2017. Three results come up with the number **99716** and no results for the other two numbers: the mastermind behind the murder is **Miranda Priestly**.
 
 ## Part 2. SQL Police Department
-### Case 2.0.1.:
+### SQLPD Cases:
+1. Mission Brief: A mailing list of an illegal service was sent to the SQLPD hot-line. Please submit all entries join dates, email addresses and family names' details.
 
+2. Mission Brief: A hacked site members' details have surfaced on a darknet forum. Please submit all members' details.
 
+3. Mission Brief: White hat hacker has sent SQLPD exposed subscribers' details of a shady site connected to various persons of interest. Please submit all subscribers mailing addresses, hashed passwords and subscription dates' details.
+
+4. Mission Brief: A hacked site members' details have surfaced on a darknet forum. Please submit all members usernames and mailing addresses' details.
 
 
 
